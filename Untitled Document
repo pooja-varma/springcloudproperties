@@ -1,0 +1,58 @@
+pooja@pooja-Inspiron-3542:~/exercise$ git config --list
+user.email=varmapooja09@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/pooja-varma/cloud-config-and-eureka-server-.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+
+
+
+pooja@pooja-Inspiron-3542:~/Desktop/Pooja/cloudproperties$ git config --list
+user.email=varmapooja09@gmail.com
+core.repositoryformatversion=0
+core.filemode=true
+core.bare=false
+core.logallrefupdates=true
+remote.origin.url=https://github.com/pooja-varma/springcloudproperties.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+branch.master.remote=origin
+branch.master.merge=refs/heads/master
+
+
+https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup
+
+
+[core]
+    repositoryformatversion = 0
+    filemode = true
+    logallrefupdates = true
+    bare = false
+[remote "origin"]
+    url = https://example@github.com/example/example-project.git
+    fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "extended-version"]
+    remote = origin
+    merge = refs/heads/extended-version
+[pack]
+    buildbitmaps = false
+
+
+[user]
+    name = Your Name
+    email = your@email.com
+
+https://coalaweb.com/support/documentation/item/coalaweb-docs-default-git-user
+https://stackoverflow.com/questions/9481818/cant-clone-remote-git-repository-with-egit
+
+
+down vote
+accepted
+It sounds like Egit is looking for an ssl certificate and refusing to function without it. A good fix to make the problem go away and stay away: Window→Preferences→Team→Git→Configuration→New Entry→http.sslverify=false.
+
+
+
+
